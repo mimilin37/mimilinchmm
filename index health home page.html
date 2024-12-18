@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火鍋湯底應如何挑選</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3493e01b1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar{
+            background-color: #f808b0;
+            padding: 1% 0;
+            font-size: 1.2em;
+        }
+        .navbar-brand img{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+        }
+        .navbar-brand img:hover{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+            transform: scale(1.1);
+            background-color: #f8f408;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .navbar-default .navbar-nav li a{
+            color: blue;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav li a.active{
+            color: rgb(255, 217, 0);
+        }
+        #home{
+            background: linear-gradient(#d799f3a1,#c008f8a1),url(img/lavender-fields-at-sunrise-michael-ash.jpg) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        .landing-text{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .landing-text h1{
+            font-size: 500%;
+            font-weight: 800;
+            color: azure;
+        }
+        .padding{
+            padding: 80px 0;
+        }
+        .padding img{
+            width: 100%;
+        }
+
+        .text-animation{
+            font-size: 34px;
+            font-weight: 700;
+            min-width: 280px;
+        }
+        .text-animation span{
+            position: relative;
+        }
+        .text-animation span::before{
+            content: "CREATE HEALTH LIFE!!!";
+            color: #f4f7da;
+            animation: word 25s infinite;
+        }
+        .text-animation span::after{
+            content: "";
+            background-color: #f2dff8;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 5px solid #f808b0;
+            right: -8px;
+            animation: cursor 0.6s infinite, typing 20s steps(14) infinite ;
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid var(--main-color);
+            }
+        }
+        @keyframes word{
+            0%,
+            20%{
+                content: "CREATE HEALTH LIFE!!!";
+            }
+            21%,
+            40%{
+                content: "CREATE SMILE LIFE!!!";
+            }
+            41%,
+            60%{
+                content: "CREATE POWERFULL LIFE!!!";
+            }
+            61%,
+            80%{
+                content: "ENJOY THE HEALTH FOODS, SPORTS AND OTHER!!!";
+            }
+            81%,
+            100%{
+                content: "WALKING AND LIVING IN HEALTH WORD!!!";
+            }
+        }
+        @keyframes typing{
+            10%,
+            15%,
+            30%,
+            35%,
+            50%,
+            55%,
+            70%,
+            75%,
+            90%,
+            95%{
+                width: 0;
+            }
+            5%,
+            20%,
+            25%,
+            40%,
+            45%,
+            60%,
+            65%,
+            80%,
+            85%{
+                width: calc(100% + 8px);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .landing-text h1{
+
+                font-size: 300%;
+            }
+            .fa-brands,.fa-solid{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!---the navbar-and add container--->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navber-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/OIP-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="index health all.html">HEALTH</a></li>
+                <li><a href="index health breads.html">BREADS</a></li>
+                <li><a href="index health cos. .html">COSME.</a></li>
+                <li><a href="index health dance.html">DANCE</a></li>
+                <li><a href="index health drink.html">DRINK</a></li>
+                <li><a href="index health fruit.html">FRUIT</a></li>
+                <li><a href="index health gym.html">GYM</a></li>
+                <li><a href="index health pot.html">POT</a></li>
+                <li><a href="index FOREVER YOUNG.html">FRY</a></li>
+                <li><a href="index forever young 2.html">FRY2</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+        <h1>WECOLME TO HEALTH WORLD</h1>
+        <h3 class="text-animation">and <span></span> </h3>
+        <a href="#" class="btn btn-default btn-large">Learn more</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火鍋湯底應如何挑選</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3493e01b1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar{
+            background-color: #f808b0;
+            padding: 1% 0;
+            font-size: 1.2em;
+        }
+        .navbar-brand img{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+        }
+        .navbar-brand img:hover{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+            transform: scale(1.1);
+            background-color: #f8f408;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .navbar-default .navbar-nav li a{
+            color: blue;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav li a.active{
+            color: rgb(255, 217, 0);
+        }
+        #home{
+            background: linear-gradient(#d799f3bb,#c008f8b6),url(img/1637818418-a359ce8e3765d72e9f4a29f7b11717f3.jpg) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        .landing-text{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .landing-text h1{
+            font-size: 500%;
+            font-weight: 800;
+            color: azure;
+        }
+        .padding{
+            padding: 80px 0;
+        }
+        .padding img{
+            width: 100%;
+        }
+        #fixed{
+            background: linear-gradient(#f8ac08be,#f86808c0),url(img/0000.jpg) no-repeat center center fixed;
+            display: table;
+            height: 60%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        footer{
+            width: 100%;
+            background-color: #c808f8;
+            padding: 5% 5% 10% 5%;
+            color: #f2dff8;
+        }
+        .fa-brands{
+            padding: 15px;
+            font-size: 25px;
+            color: aquamarine;
+            transition: 0.3s ease; 
+        }
+        .fa-brands:hover{
+            color: rgb(236, 221, 13);
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+        #other-links{
+            padding: 15px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+        }
+        #other-links a{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transition: 0.3s ease; 
+        }
+        #other-links a:hover{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transform: scale(1.1);
+            text-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .text-animation{
+            font-size: 34px;
+            font-weight: 700;
+            min-width: 280px;
+        }
+        .text-animation span{
+            position: relative;
+        }
+        .text-animation span::before{
+            content: "CREATE HEALTH LIFE!!!";
+            color: #f4f7da;
+            animation: word 25s infinite;
+        }
+        .text-animation span::after{
+            content: "";
+            background-color: #f2dff8;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 5px solid #f808b0;
+            right: -8px;
+            animation: cursor 0.6s infinite, typing 20s steps(14) infinite ;
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid var(--main-color);
+            }
+        }
+        @keyframes word{
+            0%,
+            20%{
+                content: "CREATE HEALTH LIFE!!!";
+            }
+            21%,
+            40%{
+                content: "CREATE SMILE LIFE!!!";
+            }
+            41%,
+            60%{
+                content: "CREATE POWERFULL LIFE!!!";
+            }
+            61%,
+            80%{
+                content: "ENJOY THE HEALTH FOODS!!!";
+            }
+            81%,
+            100%{
+                content: "WALKING AND LIVING IN HEALTH WORD!!!";
+            }
+        }
+        @keyframes typing{
+            10%,
+            15%,
+            30%,
+            35%,
+            50%,
+            55%,
+            70%,
+            75%,
+            90%,
+            95%{
+                width: 0;
+            }
+            5%,
+            20%,
+            25%,
+            40%,
+            45%,
+            60%,
+            65%,
+            80%,
+            85%{
+                width: calc(100% + 8px);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .landing-text h1{
+
+                font-size: 300%;
+            }
+            .fa-brands,.fa-solid{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!---the navbar-and add container--->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navber-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/OIP-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="active" href="index health home page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#advice">Advice</a></li>
+                <li><a href="#target">Target</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+        <h1>WECOLME TO HEALTH WORLD</h1>
+        <h3 class="text-animation">and <span></span> </h3>
+        <a href="#" class="btn btn-default btn-large">Learn more</a>
+    </div>
+</div>
+
+<div class="padding" id="about">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/images_hot-pot_hot-pot-05-700x467.jpg" alt="">
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2>All about pots</h2>
+            <p class="lead">一旦進入寒流，吃火鍋的念頭又開始浮現出來，諸如薑母鴨、羊肉爐和大骨湯雖然都是暖胃的最佳選擇，但是它們都隱藏著一種高油和高熱量的風險！</p>
+            <p class="lead">上述這些熱性食物，雖然是可以預防貧血，但攝取過量可能導致鈉含量過高。</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---以下的欄位設定為基於響應式網頁，由原本的4個欄位，經由螢幕調整大小拖曳，變成2個再漸漸變成1個！(共4個)--->
+<div class="padding" id="advice">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>火鍋食材最佳選擇1-芥菜加薑</h4>
+            <p>芥菜含有有機硫化物，可對抗自由基，和薑一起搭配也相當提味，亦能改善手腳冰冷和貧血。</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/original.jpeg" class="img-responsive" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>火鍋食材最佳選擇2-青花椰苗加肉類</h4>
+            <p>菜苗大多性寒，若擔心可搭配各式肉類一起吃，猶如羊肉和豬肉。菜苗的酵素可以改善單吃肉類會帶來的身體各種負擔。</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/original (1).jpeg" class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="fixed">
+</div>
+
+<div class="padding" id="target">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>減肥能吃火鍋嗎?</h4>
+                <p>營養師建議減重人士在吃火鍋時，必須限制喝湯的量。且在飲用前，畢竟有些火鍋料脂肪含量頗高，因此必須在加入此前，喝一碗湯就好！</p>
+                <p >另一方面，請少吃火鍋料，因為它們都是100%加工食品！(熱量光是一小顆就超級大破表)至於湯底，可選擇熱量較低的昆布過、蔬菜鍋、大骨鍋以及菌菇鍋</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/4152708.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+<!---The footer have three columns,include contact data,links of social media and the othrt link!--->
+<footer class="container-fluid text-center" id="more">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>More link about this website</h3>
+            <br>
+            <h4>If you click the icon beside this column,you will get more information about this website soon!</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Social links</h3>
+            <a href="https://www.facebook.com/Learneating/posts/pfbid02oceU2Kp4YLqvSxQguZZZPCZGERmMED8kynWj7Gb4LTS3BFS7FmJTViKxtsJhXrkJl"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://www.instagram.com/nutrition.sharon/p/C8HfHaBSnBB/?img_index=1"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/CEROhongkong/status/407560228138266625"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.pinterest.com/pin/567453621809056913/"><i class="fa-brands fa-pinterest"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-weibo"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=jOUoIFlCaFQ"><i class="fa-brands fa-youtube"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-weixin"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-behance"></i></a>
+            <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+        </div>
+        <div class="col-sm-4" id="other-links">
+            <h3>The other website links</h3>
+            <a href="index health all.html"><i class="fa-solid fa-apple-whole"></i></i></a>
+            <a href="index health breads.html"><i class="fa-solid fa-cloud"></i></a>
+            <a href="index health drink.html"><i class="fa-solid fa-bolt"></i></a>
+            <a href="index health cos. .html"><i class="fa-solid fa-music"></i></a>
+            <br>
+            <a href="index health dance.html"><i class="fa-solid fa-umbrella"></i></a>
+            <a href="index health fruit.html"><i class="fa-solid fa-mug-hot"></i></a>
+            <a href="index health gym.html"><i class="fa-solid fa-gift"></i></a>
+            <a href="index health pot.html"><i class="fa-solid fa-headphones"></i></a>
+            <br>
+            <a href="index FOREVER YOUNG.html"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="index forever young 2.html"><i class="fa-solid fa-droplet"></i></a>
+            <a href=""><i class="fa-solid fa-circle-exclamation"></i></a>
+            <a href=""><i class="fa-solid fa-eye"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

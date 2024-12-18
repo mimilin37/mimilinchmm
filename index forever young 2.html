@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運動 FOREVER YOUNG</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3493e01b1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar{
+            background-color: #f808b0;
+            padding: 1% 0;
+            font-size: 1.2em;
+        }
+        .navbar-brand img{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+        }
+        .navbar-brand img:hover{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+            transform: scale(1.1);
+            background-color: #f8f408;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .navbar-default .navbar-nav li a{
+            color: blue;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav li a.active{
+            color: rgb(255, 217, 0);
+        }
+        #home{
+            background: linear-gradient(#d799f3bb,#c008f8b6),url(img/gym4.jpg) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        .landing-text{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .landing-text h1{
+            font-size: 500%;
+            font-weight: 800;
+            color: azure;
+        }
+        .padding{
+            padding: 80px 0;
+        }
+        .padding img{
+            width: 100%;
+        }
+        #fixed{
+            background: linear-gradient(#f8ac08be,#f86808c0),url(img/pexels-janetrangdoan-1092730.jpg) no-repeat center center fixed;
+            display: table;
+            height: 60%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        footer{
+            width: 100%;
+            background-color: #c808f8;
+            padding: 5% 5% 10% 5%;
+            color: #f2dff8;
+        }
+        .fa-brands{
+            padding: 15px;
+            font-size: 25px;
+            color: aquamarine;
+            transition: 0.3s ease; 
+        }
+        .fa-brands:hover{
+            color: rgb(236, 221, 13);
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+        #other-links{
+            padding: 15px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+        }
+        #other-links a{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transition: 0.3s ease; 
+        }
+        #other-links a:hover{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transform: scale(1.1);
+            text-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .text-animation{
+            font-size: 34px;
+            font-weight: 700;
+            min-width: 280px;
+        }
+        .text-animation span{
+            position: relative;
+        }
+        .text-animation span::before{
+            content: "CREATE HEALTH LIFE!!!";
+            color: #f4f7da;
+            animation: word 25s infinite;
+        }
+        .text-animation span::after{
+            content: "";
+            background-color: #f2dff8;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 5px solid #f808b0;
+            right: -8px;
+            animation: cursor 0.6s infinite, typing 20s steps(14) infinite ;
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid var(--main-color);
+            }
+        }
+        @keyframes word{
+            0%,
+            20%{
+                content: "CREATE HEALTH LIFE!!!";
+            }
+            21%,
+            40%{
+                content: "CREATE SMILE LIFE!!!";
+            }
+            41%,
+            60%{
+                content: "CREATE POWERFULL LIFE!!!";
+            }
+            61%,
+            80%{
+                content: "ENJOY THE HEALTH FOODS!!!";
+            }
+            81%,
+            100%{
+                content: "WALKING AND LIVING IN HEALTH WORD!!!";
+            }
+        }
+        @keyframes typing{
+            10%,
+            15%,
+            30%,
+            35%,
+            50%,
+            55%,
+            70%,
+            75%,
+            90%,
+            95%{
+                width: 0;
+            }
+            5%,
+            20%,
+            25%,
+            40%,
+            45%,
+            60%,
+            65%,
+            80%,
+            85%{
+                width: calc(100% + 8px);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .landing-text h1{
+
+                font-size: 300%;
+            }
+            .fa-brands{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!---the navbar-and add container--->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navber-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/OIP-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="active" href="index health home page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#advice">Advice</a></li>
+                <li><a href="#target">Target</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+        <h1>WECOLME TO HEALTH WORLD</h1>
+        <h3 class="text-animation">and <span></span> </h3>
+        <a href="#" class="btn btn-default btn-large">Learn more</a>
+    </div>
+</div>
+
+<div class="padding" id="about">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/gym2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2>All about anti-aging sports</h2>
+            <p class="lead">一個人只要到了一定的年紀(25或30歲)過後，生理狀態就會出現一些小變化或小狀況。這時便可拿出最可靠的防老武器之一-運動。</p>
+            <p class="lead">運動之所以能抗衰老起因於，可以快速增加肌肉量，減緩肌肉流失並提升代謝能力！以下提供幾項最能讓身體「開懷笑」幾個點：</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---以下的欄位設定為基於響應式網頁，由原本的4個欄位，經由螢幕調整大小拖曳，變成2個再漸漸變成1個！(共4個)--->
+<div class="padding" id="advice">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>用運動把青春都抓回來1-超慢跑</h4>
+            <p>它主要的功能是減肥瘦身、增加心肺耐力，為一種比跑步還溫和一店的休閒運動！更有助於防止關節退化。是欲動齡人士的第一選擇!</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/th.jpg" class="img-responsive" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>用運動把青春都抓回來2－深蹲</h4>
+            <p>它和超慢跑一樣都可以有效減肥瘦身、防止關節退化，此外對下肢的肌肉增長十分有幫助。</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/gym5.jpg" class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="fixed">
+</div>
+
+<div class="padding" id="target">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>運動聰明時間</h4>
+                <p >依據歐洲心臟雜誌得出研究表明:每周至少3小時以上運動對減緩身體部位衰老絕對是抗老化界的新星!</p>
+                <p >此外這項偉大報章雜誌的研究亦表明，絕大多數的運動亦能提升心情愉快、若再配合其餘均衡的人體必需營養素更能減少脂肪並維持健康體重！</p><br>
+                <p>其餘相關健康研究所得出的結果雷同，也提醒民眾多運動、改善記憶力、專注力甚至是改善本尊一整年都會預測的人生運氣！</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/healthy-food-clean-eating-selection.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+<!---The footer have three columns,include contact data,links of social media and the othrt link!--->
+<footer class="container-fluid text-center" id="more">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>More link about this website</h3>
+            <br>
+            <h4>If you click the icon beside this column,you will get more information about this website soon!</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Social links</h3>
+            <a href=""><i class="fa-brands fa-facebook "></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/Xtrader_Steven/status/1863673749796688145"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.pinterest.com/pin/748090188151126451/"><i class="fa-brands fa-pinterest"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-weibo"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=Mre37gDTnB0"><i class="fa-brands fa-youtube"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-weixin"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-behance"></i></a>
+            <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+        </div>
+        <div class="col-sm-4" id="other-links">
+            <h3>The other website links</h3>
+            <a href="index health all.html"><i class="fa-solid fa-apple-whole"></i></a>
+            <a href="index health breads.html"><i class="fa-solid fa-cloud"></i></a>
+            <a href="index health cos. .html"><i class="fa-solid fa-bolt"></i></a>
+            <a href="index health dance.html"><i class="fa-solid fa-music"></i></a>
+            <br>
+            <a href="index health drink.html"><i class="fa-solid fa-umbrella"></i></a>
+            <a href="index health fruit.html"><i class="fa-solid fa-mug-hot"></i></a>
+            <a href="index health gym.html"><i class="fa-solid fa-gift"></i></a>
+            <a href="index health pot.html"><i class="fa-solid fa-headphones"></i></a>
+            <br>
+            <a href="index FOREVER YOUNG.html"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="index forever young 2.html"><i class="fa-solid fa-droplet"></i></a>
+            <a href=""><i class="fa-solid fa-circle-exclamation"></i></a>
+            <a href="https://www.fitnessfactory.com.tw/tw/blog/%E5%81%A5%E4%BA%BA%E6%97%A5%E8%A8%98/%E8%AE%93%E4%BA%BA%E5%9B%9E%E6%98%A5%E9%80%86%E9%BD%A1%E7%9A%84%E9%81%8B%E5%8B%95%E6%8A%97%E8%A1%B0%E8%80%81%E8%83%8C%E5%BE%8C%E7%9A%84%E9%A9%9A%E4%BA%BA%E7%A7%91%E5%AD%B8"><i class="fa-solid fa-eye"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麵包聰明選</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3493e01b1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar{
+            background-color: #f808b0;
+            padding: 1% 0;
+            font-size: 1.2em;
+        }
+        .navbar-brand img{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+        }
+        .navbar-brand img:hover{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+            transform: scale(1.1);
+            background-color: #f8f408;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .navbar-default .navbar-nav li a{
+            color: blue;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav li a.active{
+            color: rgb(255, 217, 0);
+        }
+        #home{
+            background: linear-gradient(#ecca58bb,#af9003b6),url(img/breads.png) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        .landing-text{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .landing-text h1{
+            font-size: 500%;
+            font-weight: 800;
+            color: azure;
+        }
+        .padding{
+            padding: 80px 0;
+        }
+        .padding img{
+            width: 100%;
+        }
+        #fixed{
+            background: linear-gradient(#f8ac08be,#f86808c0),url(img/bredas5.jpg) no-repeat center center fixed;
+            display: table;
+            height: 60%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        footer{
+            width: 100%;
+            background-color: #c808f8;
+            padding: 5% 5% 10% 5%;
+            color: #f2dff8;
+        }
+        .fa-brands{
+            padding: 15px;
+            font-size: 25px;
+            color: aquamarine;
+            transition: 0.3s ease; 
+        }
+        .fa-brands:hover{
+            color: rgb(236, 221, 13);
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+        #other-links{
+            padding: 15px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+        }
+        #other-links a{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transition: 0.3s ease; 
+        }
+        #other-links a:hover{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transform: scale(1.1);
+            text-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .text-animation{
+            font-size: 34px;
+            font-weight: 700;
+            min-width: 280px;
+        }
+        .text-animation span{
+            position: relative;
+        }
+        .text-animation span::before{
+            content: "CREATE HEALTH LIFE!!!";
+            color: #f4f7da;
+            animation: word 25s infinite;
+        }
+        .text-animation span::after{
+            content: "";
+            background-color: #f2dff8;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 5px solid #f808b0;
+            right: -8px;
+            animation: cursor 0.6s infinite, typing 20s steps(14) infinite ;
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid var(--main-color);
+            }
+        }
+        @keyframes word{
+            0%,
+            20%{
+                content: "CREATE HEALTH LIFE!!!";
+            }
+            21%,
+            40%{
+                content: "CREATE SMILE LIFE!!!";
+            }
+            41%,
+            60%{
+                content: "CREATE POWERFULL LIFE!!!";
+            }
+            61%,
+            80%{
+                content: "ENJOY THE HEALTH FOODS!!!";
+            }
+            81%,
+            100%{
+                content: "WALKING AND LIVING IN HEALTH WORD!!!";
+            }
+        }
+        @keyframes typing{
+            10%,
+            15%,
+            30%,
+            35%,
+            50%,
+            55%,
+            70%,
+            75%,
+            90%,
+            95%{
+                width: 0;
+            }
+            5%,
+            20%,
+            25%,
+            40%,
+            45%,
+            60%,
+            65%,
+            80%,
+            85%{
+                width: calc(100% + 8px);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .landing-text h1{
+
+                font-size: 300%;
+            }
+            .fa-brands,.fa-solid{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!---the navbar-and add container--->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navber-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/OIP-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="active" href="index health home page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#advice">Advice</a></li>
+                <li><a href="#target">Target</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+        <h1>WECOLME TO HEALTH WORLD</h1>
+        <h3 class="text-animation">and <span></span> </h3>
+        <a href="#" class="btn btn-default btn-large">Learn more</a>
+    </div>
+</div>
+
+<div class="padding" id="about">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/breads2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2>All about Breads</h2>
+            <p class="lead">相信大多數的市民都會選擇麵包當早餐、點心或下午茶，但也要聰明選，以至於不接觸高熱量和脂肪！</p>
+            <p class="lead">這裡有一個選麵包的小口訣：看標示、多全穀、少加工、少餡料</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---以下的欄位設定為基於響應式網頁，由原本的4個欄位，經由螢幕調整大小拖曳，變成2個再漸漸變成1個！(共4個)--->
+<div class="padding" id="advice">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>麵包聰明挑選家1-多全穀</h4>
+            <p>全穀可以攝取較豐富的維生素、礦物質和膳食纖維。</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/breads3.jpg" class="img-responsive" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>麵包聰明挑選家2-口訣3不</h4>
+            <p>個大門市的麵包都有其營養標籤，且減少氣味香的不大自然和顏色過於艷麗的麵包，更需注意含高糖高油的軟麵包和餡料的攝取！</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/breads4.jpg" class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="fixed">
+</div>
+
+<div class="padding" id="target">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>題外話:全麥麵包會越吃越胖?</h4>
+                <p >主要特色是含高膳食纖維，才會有飽足感並減少飢餓感。</p>
+                <p >然而，挑選全麥麵包時，未必都是真正的。這時就應當看成分表！若不含全麥粉、頗面為乳白色者就別考慮了。</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/R.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+<!---The footer have three columns,include contact data,links of social media and the othrt link!--->
+<footer class="container-fluid text-center" id="more">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>More link about this website</h3>
+            <br>
+            <h4>If you click the icon beside this column,you will get more information about this website soon!</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Social links</h3>
+            <a href="https://www.facebook.com/dietitianLi/posts/%E6%9C%89%E4%BA%BA%E4%B9%9F%E6%98%AF%E9%BA%B5%E5%8C%85%E6%8E%A7%E5%97%8E%EF%B8%8F%E9%A6%99%E9%A6%99%E8%BB%9F%E8%BB%9F-%E6%9C%89%E9%B9%B9%E6%9C%89%E7%94%9C-%E6%83%B3%E5%88%B0%E5%B0%B1%E6%B5%81%E5%8F%A3%E6%B0%B4%E4%BA%86%E9%BA%B5%E5%8C%85-%E7%86%B1%E9%87%8F%E6%87%B6%E4%BA%BA%E5%8C%85c%E7%A2%B3%E6%B0%B4%E5%8C%96%E5%90%88%E7%89%A9gp%E8%9B%8B%E7%99%BD%E8%B3%AAgf%E8%84%82%E8%82%AAg%E7%B4%85%E7%87%88%E5%8D%80-%E7%86%B1%E9%87%8F450kcal%E7%BE%85%E5%AE%8B%E9%BA%B5%E5%8C%85-456kcal-c60p/1041727527314230/"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://www.instagram.com/sabbilightkitchen/p/CNusz4cF4az/?img_index=1"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/freeshiuan/status/1840426322012880903"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.pinterest.com/pin/177821885280358575/"><i class="fa-brands fa-pinterest"></i></a>
+            <br>
+            <a href="https://www.tiktok.com/@__maxfit11__/video/7434017215340383493?q=%E9%BA%B5%E5%8C%85%E7%87%9F%E9%A4%8A%E7%B4%A0&t=1734490833201"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://m.weibo.cn/detail/5047839889556308"><i class="fa-brands fa-weibo"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=_Kw4KVX0SwQ"><i class="fa-brands fa-youtube"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-weixin"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-behance"></i></a>
+            <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+        </div>
+        <div class="col-sm-4" id="other-links">
+            <h3>The other website links</h3>
+            <a href="index health pot.html"><i class="fa-solid fa-apple-whole"></i></i></a>
+            <a href="index health all.html"><i class="fa-solid fa-cloud"></i></a>
+            <a href="index health drink.html"><i class="fa-solid fa-bolt"></i></a>
+            <a href="index health breads.html"><i class="fa-solid fa-music"></i></a>
+            <br>
+            <a href="index health dance.html"><i class="fa-solid fa-umbrella"></i></a>
+            <a href="index health fruit.html"><i class="fa-solid fa-mug-hot"></i></a>
+            <a href="index health gym.html"><i class="fa-solid fa-gift"></i></a>
+            <a href="index health cos. .html"><i class="fa-solid fa-headphones"></i></a>
+            <br>
+            <a href="index FOREVER YOUNG.html"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="index forever young 2.html"><i class="fa-solid fa-droplet"></i></a>
+            <a href=""><i class="fa-solid fa-circle-exclamation"></i></a>
+            <a href=""><i class="fa-solid fa-eye"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

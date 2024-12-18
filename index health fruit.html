@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水果如何吃更營養</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3493e01b1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .navbar{
+            background-color: #f808b0;
+            padding: 1% 0;
+            font-size: 1.2em;
+        }
+        .navbar-brand img{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+        }
+        .navbar-brand img:hover{
+            width: 6rem;
+            padding: 2px 5px 5px ;
+            transition: 0.3s ease; 
+            transform: scale(1.1);
+            background-color: #f8f408;
+            border-radius: 50%;
+            box-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .navbar-default .navbar-nav li a{
+            color: blue;
+        }
+        .navbar-default .navbar-nav li a:hover,
+        .navbar-default .navbar-nav li a.active{
+            color: rgb(255, 217, 0);
+        }
+        #home{
+            background: linear-gradient(#d799f3bb,#c008f8b6),url(img/e760b64d51eb4260b31a77ad22b7bc96.jpeg) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        .landing-text{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .landing-text h1{
+            font-size: 500%;
+            font-weight: 800;
+            color: azure;
+        }
+        .padding{
+            padding: 80px 0;
+        }
+        .padding img{
+            width: 100%;
+        }
+        #fixed{
+            background: linear-gradient(#f8ac08be,#f86808c0),url(img/fruit.jpg) no-repeat center center fixed;
+            display: table;
+            height: 60%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+        footer{
+            width: 100%;
+            background-color: #c808f8;
+            padding: 5% 5% 10% 5%;
+            color: #f2dff8;
+        }
+        .fa-brands{
+            padding: 15px;
+            font-size: 25px;
+            color: aquamarine;
+            transition: 0.3s ease; 
+        }
+        .fa-brands:hover{
+            color: rgb(236, 221, 13);
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+        #other-links{
+            padding: 15px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+        }
+        #other-links a{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transition: 0.3s ease; 
+        }
+        #other-links a:hover{
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: rgb(127, 255, 138);
+            transform: scale(1.1);
+            text-shadow: 0 0 25px #f8f408,
+                        0 0 50px #f8f408,
+                        0 0 100px #f8f408;
+        }
+        .text-animation{
+            font-size: 34px;
+            font-weight: 700;
+            min-width: 280px;
+        }
+        .text-animation span{
+            position: relative;
+        }
+        .text-animation span::before{
+            content: "CREATE HEALTH LIFE!!!";
+            color: #f4f7da;
+            animation: word 25s infinite;
+        }
+        .text-animation span::after{
+            content: "";
+            background-color: #f2dff8;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 5px solid #f808b0;
+            right: -8px;
+            animation: cursor 0.6s infinite, typing 20s steps(14) infinite ;
+        }
+        @keyframes cursor{
+            to{
+                border-left: 2px solid var(--main-color);
+            }
+        }
+        @keyframes word{
+            0%,
+            20%{
+                content: "CREATE HEALTH LIFE!!!";
+            }
+            21%,
+            40%{
+                content: "CREATE SMILE LIFE!!!";
+            }
+            41%,
+            60%{
+                content: "CREATE POWERFULL LIFE!!!";
+            }
+            61%,
+            80%{
+                content: "ENJOY THE HEALTH FOODS!!!";
+            }
+            81%,
+            100%{
+                content: "WALKING AND LIVING IN HEALTH WORD!!!";
+            }
+        }
+        @keyframes typing{
+            10%,
+            15%,
+            30%,
+            35%,
+            50%,
+            55%,
+            70%,
+            75%,
+            90%,
+            95%{
+                width: 0;
+            }
+            5%,
+            20%,
+            25%,
+            40%,
+            45%,
+            60%,
+            65%,
+            80%,
+            85%{
+                width: calc(100% + 8px);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .landing-text h1{
+
+                font-size: 300%;
+            }
+            .fa-brands,.fa-solid{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!---the navbar-and add container--->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navber-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/OIP-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="active" href="index health home page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#advice">Advice</a></li>
+                <li><a href="#target">Target</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="home">
+    <div class="landing-text">
+        <h1>WECOLME TO HEALTH WORLD</h1>
+        <h3 class="text-animation">and <span></span> </h3>
+        <a href="#" class="btn btn-default btn-large">Learn more</a>
+    </div>
+</div>
+
+<div class="padding" id="about">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/fruit2.jpeg" alt="">
+        </div>
+        <div class="col-sm-6 text-center">
+            <h2>All about max of fruits</h2>
+            <p class="lead">水果沙拉是防癌、抗老化、增強免疫力和控制體重的最佳來源。</p>
+            <p class="lead">然而並不是所有沙拉都封上「絕對健康王者」的名號。那現在就一探究竟吧......</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!---以下的欄位設定為基於響應式網頁，由原本的4個欄位，經由螢幕調整大小拖曳，變成2個再漸漸變成1個！(共4個)--->
+<div class="padding" id="advice">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>沙拉的陷阱1-注意培根切塊的攝取</h4>
+            <p>營養師表示，要攝取蛋白質補充體力絕非吃培根。因為它含大量油脂和加工香料，可能會有高血糖(壓)的風險。</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/salad.jpg" class="img-responsive" alt="">
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <h4>沙拉的陷阱2-醬汁的成分</h4>
+            <p>依據新聞影片的資料分析，沙拉的醬汁以減重人士來說，需嚴謹挑選！比方說凱薩醬和千島醬的脂肪量頗高(約16克)若全加入蔬菜裡恐怕會是比白飯還高的驚人熱量！</p>
+        </div>
+        <div class="col-lg-3 col-md-3-col-sm-6 col-xs-12">
+            <img src="img/fruit4.jpg" class="img-responsive" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="fixed">
+</div>
+
+<div class="padding" id="target">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>沙拉聰明選料</h4>
+                <p >所謂堆起「紅綠燈」，也就是把所有顏色的蔬果都聚集在一起。且這些都含有抗癌防老化的質化素。</p>
+                <p >若像吃飽一點可以藉由全麥麵包就搞定了。最後是醬汁盡量不要全部淋在萵苣上，可以防旁邊避免喝過量醬汁。</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/fruit5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+<!---The footer have three columns,include contact data,links of social media and the othrt link!--->
+<footer class="container-fluid text-center" id="more">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>More link about this website</h3>
+            <br>
+            <h4>If you click the icon beside this column,you will get more information about this website soon!</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Social links</h3>
+            <a href="https://www.facebook.com/Joy8733671/videos/lets-make-fruit-salad-%E8%87%AA%E5%B7%B1%E5%8B%95%E6%89%8B%E5%81%9A%E7%9A%84%E6%B0%B4%E6%9E%9C%E6%B2%99%E6%8B%89%E6%9C%80%E7%BE%8E%E5%91%B3%E4%BA%86/2541852672782028/"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://www.instagram.com/taiwannutrition/reel/BrbzcUgH7fz/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/xiaoluweixiao/status/1767716681613561904"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.pinterest.com/pin/346847608801174875/"><i class="fa-brands fa-pinterest"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-weibo"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/watch?v=3EEIQ4sYu28"><i class="fa-brands fa-youtube"></i></a>
+            <br>
+            <a href=""><i class="fa-brands fa-weixin"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-behance"></i></a>
+            <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+        </div>
+        <div class="col-sm-4" id="other-links">
+            <h3>The other website links</h3>
+            <a href="index health pot.html"><i class="fa-solid fa-apple-whole"></i></i></a>
+            <a href="index health breads.html"><i class="fa-solid fa-cloud"></i></a>
+            <a href="index health drink.html"><i class="fa-solid fa-bolt"></i></a>
+            <a href="index health gym.html"><i class="fa-solid fa-music"></i></a>
+            <br>
+            <a href="index health fruit.html"><i class="fa-solid fa-umbrella"></i></a>
+            <a href="index health dance.html"><i class="fa-solid fa-mug-hot"></i></a>
+            <a href="index health all.html"><i class="fa-solid fa-gift"></i></a>
+            <a href="index health cos. .html"><i class="fa-solid fa-headphones"></i></a>
+            <br>
+            <a href="index FOREVER YOUNG.html"><i class="fa-solid fa-pen-to-square"></i></a>
+            <a href="index forever young 2.html"><i class="fa-solid fa-droplet"></i></a>
+            <a href=""><i class="fa-solid fa-circle-exclamation"></i></a>
+            <a href=""><i class="fa-solid fa-eye"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
